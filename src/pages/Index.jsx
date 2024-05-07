@@ -50,7 +50,7 @@ const Index = () => {
         </Flex>
         <List width="100%">
           {tasks.map(task => (
-            <ListItem key={task.id} display="flex" justifyContent="space-between" alignItems="center" p={2} borderWidth="1px" borderRadius="lg">
+            <ListItem key={task.id} display="flex" justifyContent="space-between" alignItems="center" p={4} borderWidth="1px" borderRadius="lg">
               <Text as={task.isCompleted ? 's' : ''}>{task.text}</Text>
               <Flex>
                 <IconButton
